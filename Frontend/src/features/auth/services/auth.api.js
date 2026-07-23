@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL: "https://interviewai-assist-337.onrender.com/api/auth",
-    withCredentials: true
+    credentials: true
 })
 
 export async function Register({ username, email, password }) {
