@@ -48,8 +48,8 @@ export async function Logout() {
 // this is without instance => , it take user data after login and pass as context (and refresh page when user data change using useEffect)
 export async function GetMe() {
     try {
-        const response = await axios.get(
-            'http://localhost:3000/api/auth/get-me',
+        const response = await api.get(
+            '/get-me',
             { withCredentials: true }
         )
 
