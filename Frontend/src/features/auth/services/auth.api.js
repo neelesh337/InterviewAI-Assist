@@ -50,7 +50,6 @@ export async function GetMe() {
     try {
         const response = await api.get(
             '/get-me',
-            { withCredentials: true }
         )
 
         return response.data;
