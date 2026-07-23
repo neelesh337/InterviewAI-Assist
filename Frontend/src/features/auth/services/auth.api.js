@@ -3,7 +3,7 @@ import axios from 'axios';
 // no due to repeative things we can make axios instance and fixed axios with them
 
 const api = axios.create({
-    baseURL: "http://localhost:3000/api/auth",
+    baseURL: "https://interviewai-assist-337.onrender.com/api/auth",
     withCredentials: true
 })
 
